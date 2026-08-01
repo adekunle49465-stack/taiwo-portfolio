@@ -1,0 +1,88 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oakwood Dental Care | Modern Web Design Template</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--NAVIGATION-->
+    <header>
+        <div class="container">
+            <nav>
+                <nav class="navbar">
+                <a href="#" class="logo">Oakwood <span>Dental</span> <span>care</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#book-appointment" class="btn-nav">Book Appointment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--HERO SECTIONS-->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Your Smile, Protected by Modern Dentistry</h1>
+            <p>Experience world-class, comfortable dental care right in your neighborhood. From routine checkups to complete cosmetic smile transformations.</p>
+            <a href="#" class="btn-main">Schedule Today</a>
+        </div>
+    </section>
+
+<!--SERVICES GRID SECTION-->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Our Premium Services</h2>
+            <div class="services-grid">
+                
+                <div class="service-card">
+                    <span class="service-icon">✨</span>
+                    <h3>General Dentistry</h3>
+                    <p>Comprehensive cleanings, advanced screenings, and preventative care designed to keep your natural smile healthy for life.</p>
+                </div>
+
+                <div class="service-card">
+                    <span class="service-icon">🦷</span>
+                    <h3>Cosmetic Veneers</h3>
+                    <p>Custom-crafted porcelain veneers engineered perfectly to restore shape, size, color, and brightness to your teeth.</p>
+                </div>
+
+                <div class="service-card">
+                    <span class="service-icon">⚡</span>
+                    <h3>Laser Whitening</h3>
+                    <p>Safely brighten your teeth by up to eight shades in a single session with our advanced, low-sensitivity cold laser technology.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!--CONTACT/APPOINTMENT SECTION-->
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">Request an Appointment</h2>
+            <form class="contact-form" onsubmit="event.preventDefault();">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="john1234@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="msg">How Can We Help?</label>
+                    <textarea id="msg" rows="4" placeholder="Describe the service you are looking for..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Submit Request</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
+

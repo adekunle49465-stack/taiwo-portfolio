@@ -1,0 +1,209 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* About Section Styling */
+/* About Section Styling */
+.about-section {
+    padding: 60px 20px;
+    /* Beautiful, bright soft blue gradient */
+    background: linear-gradient(135deg, #f0f6ff 0%, #e3efff 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.about-container {
+    max-width: 950px;
+    margin: 0 auto;
+    background: #ffffff; /* Crisp white card so it stands out */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 102, 204, 0.08);
+    border: 1px solid rgba(0, 102, 204, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    object-fit: cover;
+}
+
+.about-content {
+    flex: 2;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    color: #111;
+    margin-bottom: 5px;
+}
+
+.about-content h3 {
+    font-size: 1.5rem;
+    color: #0066cc;
+    margin: 5px 0 0 0;
+    font-weight: 600;
+}
+
+.about-content .subtitle {
+    font-size: 1rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.about-skills {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.about-skills span {
+    background-color: #e1f0ff;
+    color: #0066cc;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid #b3d7ff;
+}
+
+/* Projects Section Styling */
+.projects-section {
+    padding: 80px 20px;
+    /* Continuing the beautiful bright blue background */
+    background: linear-gradient(180deg, #e3efff 0%, #f0f6ff 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.projects-container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.projects-container h2 {
+    font-size: 2.2rem;
+    color: #111;
+    text-align: center;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.projects-container .section-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* CSS Grid for Project Cards */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Enhanced Card Styling */
+.project-card {
+    background: #ffffff; /* Crisp white cards to match the About card */
+    border: 1px solid rgba(0, 102, 204, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.02);
+}
+
+/* Hover lift effect for interactivity */
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 35px rgba(0, 102, 204, 0.12);
+    border-color: #0066cc;
+}
+
+.project-info {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.project-info h3 {
+    font-size: 1.4rem;
+    color: #111;
+    margin: 0 0 12px 0;
+    font-weight: 600;
+}
+
+.project-info p {
+    font-size: 0.98rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+/* View Project Button */
+.project-link {
+    display: inline-block;
+    text-align: center;
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-link:hover {
+    background-color: #004c99;
+}
+
+.project-link:active {
+    transform: scale(0.98);
+}
+
+/* Responsive View */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+    .about-skills {
+        justify-content: center;
+    }
+}
+
+
+
+

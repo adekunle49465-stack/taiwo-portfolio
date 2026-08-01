@@ -1,0 +1,267 @@
+/*CSS VARIABLES-Keeps My branding consistence and easy to edit*/
+:root{
+    --primary:#0f4c81;  /*Deep Trustworthy Blue*/
+    --secondary:#20b2aa;  /*Clean Teal Accents*/
+    --dark:#2d3748;      /*Soft Dark for text*/
+    --light:#f7fafc;     /*Light Grey Background*/
+    --white:#ffffff;
+    --font-main:'Segoe UI',Tahoma,Geneva,Verdana,sana-serif;
+    --transition:all 0.3s ease;  
+}
+
+/*GLOBAL STYLE/*
+*{
+margin:0;
+padding:0;
+box-sizing;border-box;
+}
+
+body{
+font-family:var(--font-main);
+color:var(--dark);
+background-color:var(--white);
+line-height:1.6;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:0 auto;
+}
+
+/*NAVIGATION HEADER (Flexbox)*/
+header{
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding :20px 0;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.logo span{
+    color: var(--secondary);
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap:30px;
+    align-items: center;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-links a:hover{
+    color: var(--primary);
+}
+
+.btn-nav{
+    background-color: var(--primary);
+    color: var(--white) !important;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.btn-nav:hover{
+    background-color: var(secondary);
+}
+
+/*HERO SECTION*/
+.hero{
+    background: linear-gradient(135deg,rgba(15,76,129,0.05)0%,rgba(32,178,170,0.05)100%);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-content{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1{
+    font-size: 48px;
+    color:var(--primary);
+    margin-botttom: 20px;
+    line-height: 1.2;
+}
+
+.hero p{
+    font-size: 18px
+    color: #64748b;
+    margin-bottom: 35px;
+}
+
+.btn-main{
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 14px 30px
+    border-radius: 6px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(32,178,170,0.3);
+    transition: var(--transition);
+}
+
+.btn-main:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(32,178,170,0.4);
+}
+
+/*SERVICES SECTION (CSS Grid)*/
+.services{
+    padding: 80px 0;
+    background-color: var(--light);
+}
+
+.section-title{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: var(--primary);
+    position: relative;
+}
+
+.section-title::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--secondary);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.services-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.service-card{
+    background-color: var(--white);
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    border: 1px solid #edf2f7;
+    transition: var(--transition);
+}
+
+.service-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.05);
+    border-color: var(--secondary);
+}
+
+.service-icon{
+    font-size: 36px;
+    margin-bottom: 20px;
+    display: inline-block;
+
+}
+
+.service-card h3{
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: var(--primary);
+}
+
+/*CONTACT FORM SECTION*/
+.contact{
+    padding: 80px;
+}
+
+.contact-form{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    font-family: var(--font-main);
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px; rgba(15,76,129,0.1);
+}
+
+.btn-submit{
+    width: 100%;
+    padding: 14px;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-submit:hover{
+    background-color: var(--dark);
+}
+
+/*RESPONSIVE MEDIA QUERIES (Mobile friendly)/*
+@media (max-width: 968px) {
+.service-grid {
+   grid-template-columns:repeat(2, 1fr);
+}
+}
+
+@media (max-width: 968px) {
+  .nav-links {
+  display:none; /* in a full build, you'd add a hamburger menu toggle */
+}
+.hero h1{
+    font-size: 32px;
+}
+.services-grid {
+    grid-template-columns: 1fr;
+}
+.contact-form {
+    padding: 20px;
+}
+
+
