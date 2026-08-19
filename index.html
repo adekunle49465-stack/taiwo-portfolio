@@ -1,79 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taiwo Huzzein Adekunle | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaaSify - Streamline Your Team's Workflow</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ABOUT ME SECTION -->
-    <section class="about-section">
-        <div class="about-container">
-            <div class="about-image">
-                <!-- Drop your photo into the main folder and name it profile.jpg -->
-                <img src="profile.jpg" alt="Taiwo Huzzein Adekunle">
-            </div>
-            <div class="about-content">
-                <h2>About Me</h2>
-                <h3>Taiwo Huzzein Adekunle</h3>
-                <p class="subtitle">Freelance Web Designer</p>
-                <p>
-                    Hello! I am a passionate and detail-oriented freelance web designer crafting clean, elegant, and highly responsive web layouts.
-                </p>
-                <p>
-                    My expertise lies in writing clean, structured <strong>HTML</strong> and semantic <strong>CSS</strong>. I focus on building static layouts that are beautiful, pixel-perfect, and optimized for an exceptional user experience across all devices.
-                </p>
-                <p>
-                    I love turning conceptual designs into functional web realities, ensuring that every project scales beautifully. Let's build something amazing together!
-                </p>
-                <div class="about-skills">
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>Responsive Design</span>
-                    <span>CSS Grid & Flexbox</span>
-                </div>
-            </div>
+  <header class="navbar">
+    <div class="logo">SaaSify</div>
+    <nav class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-secondary">Log In</a>
+      <a href="#" class="btn btn-primary">Start Free</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="badge">New: Version 2.0 is Live!</span>
+        <h1>Collaborative workspace built for modern teams.</h1>
+        <p>SaaSify brings your chats, tasks, and files into one beautiful dashboard. No more messy email threads or lost spreadsheets.</p>
+        <div class="hero-buttons">
+          <a href="#pricing" class="btn btn-primary btn-large">Get Started Free</a>
+          <a href="#" class="btn btn-secondary btn-large">Watch 2 Min Demo</a>
         </div>
-    </section>
-
-    <!-- PROJECTS SECTION -->
-    <section class="projects-section">
-        <div class="projects-container">
-            <h2>My Featured Projects</h2>
-            <p class="section-subtitle">A collection of responsive static layouts built with HTML & CSS</p>
-
-            <div class="projects-grid">
-                <!-- Project 1: Midnight Bistro -->
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3>Midnight Bistro</h3>
-                        <p>A premium restaurant web layout featuring sleek menu displays and elegant content structuring.</p>
-                        <a href="midnight-bistro/index.html" class="project-link" target="_blank">View Project</a>
-                    </div>
-                </div>
-
-                <!-- Project 2: Oakwood Dental -->
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3>Oakwood Dental Clinic</h3>
-                        <p>A clean, professional medical landing page optimized for clear service presentation and scheduling workflows.</p>
-                        <a href="oakwood-dental/index.html" class="project-link" target="_blank">View Project</a>
-                    </div>
-                </div>
-
-                <!-- Project 3: SaaSify -->
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3>SaaSify</h3>
-                        <p>A modern, sleek software-as-a-service template using advanced CSS layout configurations for maximum impact.</p>
-                        <a href="saasify/index.html" class="project-link" target="_blank">View Project</a>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="hero-visual">
+        <img src="saasify-image.PNG" alt="SaaSify Platform Dashboard Mockup" class="mockup-img">
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="container text-center">
+      <h2>Everything you need to scale</h2>
+      <p class="subtitle">Powering teams of all sizes, from startups to enterprise organizations.</p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="icon-box">⚡</div>
+          <h3>Lightning Fast</h3>
+          <p>Real-time updates ensure your team stays on the exact same page without annoying lag.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-box">🔒</div>
+          <h3>Enterprise Security</h3>
+          <p>Your data is protected with military-grade, end-to-end encryption and automatic backups.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-box">📊</div>
+          <h3>Deep Analytics</h3>
+          <p>Get instant insights into bottlenecks and performance metrics with customizable reports.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <div class="text-center">
+        <h2>Simple, transparent pricing</h2>
+        <p class="subtitle">Start free, upgrade as your team grows. No hidden fees.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Starter</h3>
+          <div class="price">$0<span>/mo</span></div>
+          <p class="card-desc">Perfect for small projects.</p>
+          <ul class="pricing-features">
+            <li>✓ Up to 5 users</li>
+            <li>✓ 5GB cloud storage</li>
+            <li>✓ Basic analytics</li>
+            <li class="disabled">✗ Priority support</li>
+          </ul>
+          <a href="#" class="btn btn-secondary full-width">Sign Up Free</a>
+        </div>
+
+        <div class="pricing-card popular">
+          <div class="popular-tag">Most Popular</div>
+          <h3>Pro</h3>
+          <div class="price">$29<span>/mo</span></div>
+          <p class="card-desc">Ideal for fast-growing startups.</p>
+          <ul class="pricing-features">
+            <li>✓ Unlimited users</li>
+            <li>✓ 100GB cloud storage</li>
+            <li>✓ Advanced analytics</li>
+            <li>✓ Priority support</li>
+          </ul>
+          <a href="#" class="btn btn-primary full-width">Start 14-day Trial</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Enterprise</h3>
+          <div class="price">$99<span>/mo</span></div>
+          <p class="card-desc">For large scaling teams.</p>
+          <ul class="pricing-features">
+            <li>✓ Custom user limits</li>
+            <li>✓ Unlimited storage</li>
+            <li>✓ Dedicated account manager</li>
+            <li>✓ 99.9% SLA guarantee</li>
+          </ul>
+          <a href="#" class="btn btn-secondary full-width">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- contact section-->
+<section id="contact" class="contact-section">
+  <div class="container text-center>"
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="subtitle">Have questions about SaaSify? We are here to help your team succeed.</p>
+
+    
+  <dive class="contact-wrapper">
+    <form class="contact-form">
+      <div class="form-group">
+        <input type="text" placeholder="Your Name" required class="form-input">
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Your Email Address" required class="form-input">
+      </div>
+      <div class="form-group">
+        <!-- Added the form-input class here -->
+        <textarea placeholder="How can we help your team" required class="form-input"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+    </form>
+</dive> <!-- This closes contact-wrapper. The extra </div> after this is removed.-->
+
+</section>
+
+  <footer class="footer">
+    <p>&copy; 2026 SaaSify, Inc. All rights reserved.</p>
+  </footer>
+
 
 </body>
 </html>
